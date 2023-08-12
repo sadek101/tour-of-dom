@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     .food-cotainer li{
+        color: chocolate;
+     }
+      
+        #food-title{
+            color: black;
+        }
+        .impotant-place{
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>wellcome to my site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, rerum obcaecati dolores saepe odio soluta at consequuntur ipsam nulla totam alias esse <br> officia aliquam eius cum placeat optio. Recusandae, consequatur?</p>
+    </header>
+    <main id="main-container">
+       <section>
+        <h1>this is my firstjs conncetion</h1>
+        
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contract</li>
+            <li>service</li>
+        </ul>
+       </section>
+     <section class="food-cotainer">
+        <h1 id="food-title" class="some-class random-class blue-bg">i love this food</h1>
+        <ul>
+            <li>milk</li>
+            <li>cake</li>
+            <li>cokies</li>
+            <li>choklet</li>
+        </ul>
+     </section>
+     <section id="places-container" class="large-text">
+        <h1 id="place-title">places i like to visit</h1>
+        <ul id="place-list">
+            <li class="impotant-place">kuakata</li>
+            <li class="impotant-place">cox's bazar</li>
+            <li class="impotant-place">sundarban</li>
+            <li class="other place">sajek</li>
+        </ul>
+     </section>
+    </main>
+    <script src="dom.js"></script>
+    <script src="stylein.js"></script>
+    <script src="appnd.js"></script>
+    <script>
+      const liCollection = document.getElementsByTagName('li');
+     // console.log(liCollection);
+     for(const li of liCollection){
+     //console.log(li.innerText);
+     }
+     const alHeading = document.getElementsByTagName('h1');
+     for(const h1 of alHeading){
+        //console.log(h1.innerText)
+     }
+     const places = document.getElementsByClassName('impotant-place');
+    // console.log(places);
+    for(place of places){
+      //  console.log(place.innerText);
+    }
+    </script>
+</body>
+</html>
